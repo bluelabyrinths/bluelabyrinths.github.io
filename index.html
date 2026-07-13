@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Valerie Trachsler</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #f4f2ed;
+      color: #111;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 24px;
+      position: sticky;
+      top: 0;
+      background: rgba(244, 242, 237, 0.95);
+      border-bottom: 1px solid #ccc;
+    }
+
+    header a {
+      color: #111;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    .hero {
+      min-height: 90vh;
+      padding: 100px 24px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(64px, 14vw, 160px);
+      font-weight: normal;
+      line-height: 0.9;
+      margin: 0;
+    }
+
+    .subtitle {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    .gallery {
+      padding: 24px;
+    }
+
+    .gallery img {
+      display: block;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto 100px;
+    }
+
+    .vertical {
+      max-width: 750px !important;
+    }
+
+    section.text {
+      padding: 100px 24px;
+      border-top: 1px solid #bbb;
+    }
+
+    .text-inner {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 60px;
+    }
+
+    h2 {
+      font-family: Georgia, serif;
+      font-size: 48px;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    .text p {
+      font-size: 21px;
+      line-height: 1.55;
+      margin-top: 0;
+    }
+
+    .contact a {
+      display: block;
+      color: #111;
+      font-family: Georgia, serif;
+      font-size: clamp(30px, 6vw, 70px);
+      margin-bottom: 20px;
+    }
+
+    footer {
+      padding: 24px;
+      border-top: 1px solid #bbb;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        display: block;
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+
+      header a {
+        margin: 0 14px 0 0;
+      }
+
+      .text-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery img {
+        margin-bottom: 55px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <strong>Valerie Trachsler</strong>
+
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#project">Project</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <p class="subtitle">Cyanotype · Madrid</p>
+
+      <h1>Valerie<br>Trachsler</h1>
+
+      <a href="#work">View work ↓</a>
+    </section>
+
+    <section class="gallery" id="work">
+      <img src="images/work-01.jpg" alt="Cyanotype by Valerie Trachsler">
+
+      <img class="vertical" src="images/work-02.jpg" alt="Cyanotype by Valerie Trachsler">
+
+      <img class="vertical" src="images/work-03.jpg" alt="Cyanotype textile by Valerie Trachsler">
+
+      <img class="vertical" src="images/work-04.jpg" alt="Cyanotype by Valerie Trachsler">
+
+      <img class="vertical" src="images/work-05.jpg" alt="Cyanotype by Valerie Trachsler">
+    </section>
+
+    <section class="text" id="project">
+      <div class="text-inner">
+        <h2><em>Blue Labyrinths</em></h2>
+
+        <div>
+          <p><em>Blue Labyrinths</em> is an ongoing cyanotype project exploring the politics of the archive and the imagined afterlives of digital images.</p>
+
+          <p>Using an analog photographic process, historical fragments are removed from online repositories and reorganized into new constellations that blur archaeology, memory, authorship, and intellectual property.</p>
+
+          <p>The work is concerned with disintegration—material, historical, and digital—and with the strange temporalities that emerge when ancient objects circulate through contemporary technologies.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="text" id="about">
+      <div class="text-inner">
+        <h2>About</h2>
+
+        <div>
+          <p>Valerie Trachsler is an American interdisciplinary artist based in Madrid, Spain. Working across photography, cyanotype, and installation, her practice investigates archives, material memory, and the movement of images between digital and physical worlds.</p>
+
+          <p>Drawing on classical antiquity, hauntology, and the collective unconscious, she creates works that juxtapose ancient artifacts with contemporary systems of reproduction and preservation.</p>
+
+          <p>She holds a degree in History and Classical Philology from CUNY Brooklyn College in New York.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="text contact" id="contact">
+      <a href="mailto:valtrac@proton.me">valtrac@proton.me</a>
+
+      <a href="https://instagram.com/bluelabyrinths">
+        @bluelabyrinths
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    © Valerie Trachsler
+  </footer>
+
+</body>
+</html>
